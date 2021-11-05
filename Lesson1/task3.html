@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 10 + 10 + "10";
+		/*
+		fist 10 + 10 = 20
+		20 + "10"
+		after that 20 turns into "20" and the result is "2010" (it's конкатенация)
+		*/
+		console.log(10 + 10 + "10");
+
+		// 10 + "10" + 10;
+		/*
+		first 10 + "10" = "1010"
+		after that "1010" + 10 = "101010"
+		*/
+		console.log(10 + "10" + 10);
+		// 10 + 10 + + "10";
+		/*
+		first 10 + 10 = 20
+		after that 20 + +"10" = 30 (+"10" = 10)
+		*/
+		console.log(10 + 10 + + "10")
+
+		// 10 / -"";
+		/*
+		-"" = -0
+		10 / -0 = -infinity
+		*/
+		console.log(10 / -"")
+		// 10 / +"2,5";
+		/*
+		*+"2,5" = NaN
+		10 / NaN = NaN*/
+		console.log(10 / +"2,5")
+	</script>
+
+</body>
+</html>

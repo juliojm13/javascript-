@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		"use strict";
+		function my_summ (a , b) {
+			return a + b
+		};
+		function my_difference (a , b) {
+			return a - b
+		};
+		function my_division (a , b) {
+			return a / b
+		};
+		function my_multiplication (a , b) {
+			return a * b
+		};
+		function math_operation ( a , b , operation){
+			switch (operation) {
+
+				case "summ": 
+				return my_summ( a , b )
+
+				case "difference":
+				return my_difference( a , b )
+
+				case "multiplication":
+				return my_multiplication( a , b )
+
+				case "division":
+				return my_division(a,b)
+			}
+		}
+		let a = +prompt("Please enter the first number: ");
+		let b = +prompt("Please enter the second number: ");
+		let operation = prompt("Please enter the operation: ")
+		alert(math_operation(a, b, operation))
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		"use strict";
+		let number = prompt("Please enter the summ on rubles that you want to get into the bank: ")
+		function needWord(number) {
+			let last = number.slice(-1);
+			switch(last){
+				case "0":
+				case "5":
+				case "6":
+				case "7":
+				case "8":
+				case "9":
+					return "рублей"
+				case "1": 
+					return "рубль"
+				case "2":
+				case "3":
+				case "4":
+					return "рубля"				
+			}
+				
+		}
+		let word = needWord(number)
+
+		console.log("Ваша сумма в " + number +' '+  word + " успешно зачислена") 
+
+		
+
+	</script>
+
+</body>
+</html>

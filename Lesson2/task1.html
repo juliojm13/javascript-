@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		"use strict";
+		//first example 
+		let a  = 1, b = 1, c, d;
+		//c = undefined 
+		//a = 1
+		//a = 2 and after that
+		//c = a = 2
+		c = ++ a;
+		alert(c); // answer: 2
+
+		//second example
+		//d = undefined
+		//b = 1
+		//d = b = 1
+		//b = 2 
+		d = b++;
+		alert (d); // answer: 1
+
+		//third example
+		//c = 2
+		//a = 2
+		//a = 3
+		//c = 2 + 3 = 5
+		c = 2 + ++a;
+		alert(c); //answer: 5
+
+		//fourth example
+		//d = 2 
+		//b = 2
+		//d = 2 + 2 = 4
+		//b = 2 + 1 = 3
+		d = 2 + b++;
+		alert(d); //answer: 4 
+
+		alert(a); //3 as the last a = 3
+		alert(b); //3 as the last b = 3
+	</script>
+
+</body>
+</html>
